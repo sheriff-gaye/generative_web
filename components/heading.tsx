@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { Icon } from "lucide-react";
+import {Icon} from "lucide-react";
 
 
 interface HeadingProps {
@@ -14,7 +14,7 @@ interface HeadingProps {
 export const Heading = ({
   title,
   description,
-  icon: Icon,
+  icon:Icon,
   iconColor,
   bgColor,
 }: HeadingProps) => {
