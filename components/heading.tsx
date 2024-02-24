@@ -1,7 +1,6 @@
 
 import { cn } from "@/lib/utils";
 import {Icon} from "lucide-react";
-//ts-ignore
 
 
 interface HeadingProps {
