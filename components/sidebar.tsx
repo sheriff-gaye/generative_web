@@ -4,12 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import {
+  ArrowLeftRight,
+  Camera,
   Code,
+  ImageDown,
   ImageIcon,
   LayoutDashboard,
   MessageSquare,
   Music,
+  ScanText,
   Settings,
+  Sparkle,
   VideoIcon
 } from "lucide-react";
 
@@ -57,10 +62,41 @@ const routes = [
     href: "/code"
   },
   {
+    label: "Image Restore",
+    icon: ImageDown,
+    color: "text-blue-700",
+    href: "/code"
+  },
+  {
+    label: "Generative Fill",
+    icon: Sparkle,
+    color: "text-red-700",
+    href: "/fill"
+  },
+  {
+    label: "Object Remove",
+    icon: ScanText,
+    color: "text-yellow-700",
+    href: "/remove"
+  },
+  {
+    label: "Object Recolor",
+    icon: ArrowLeftRight,
+    color: "text-green-700",
+    href: "/recolor"
+  },
+  {
+    label: "Background Remove",
+    icon: Camera,
+    color: "text-pink-700",
+    href: "/background"
+  },
+  {
     label: "Settings",
     icon: Settings,
     href: "/settings"
   }
+
 ];
 
 const Sidebar = ({
