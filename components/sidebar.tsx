@@ -61,36 +61,14 @@ const routes = [
     color: "text-green-700",
     href: "/code"
   },
+
   {
-    label: "Image Restore",
-    icon: ImageDown,
-    color: "text-blue-700",
-    href: "/code"
-  },
-  {
-    label: "Generative Fill",
-    icon: Sparkle,
-    color: "text-red-700",
-    href: "/fill"
-  },
-  {
-    label: "Object Remove",
-    icon: ScanText,
-    color: "text-yellow-700",
-    href: "/remove"
-  },
-  {
-    label: "Object Recolor",
-    icon: ArrowLeftRight,
+    label: "AI companion",
+    icon: Code,
     color: "text-green-700",
-    href: "/recolor"
+    href: "/companion"
   },
-  {
-    label: "Background Remove",
-    icon: Camera,
-    color: "text-pink-700",
-    href: "/background"
-  },
+
   {
     label: "Settings",
     icon: Settings,
