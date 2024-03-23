@@ -5,6 +5,8 @@ import { Category } from "@prisma/client";
 import { useRouter, useSearchParams } from "next/navigation";
 
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 interface CategoriesProps {
   data: Category[];
@@ -33,7 +35,8 @@ export const Categories = ({ data }: CategoriesProps) => {
   };
 
   return (
-    <div className="w-full overflow-x-auto space-x-2 flex p-1">
+   
+    <div className="w-full overflow-x-auto space-x-2 flex p-1 ">
       <button
         onClick={() => onClick(undefined)}
         className={cn(
@@ -57,6 +60,7 @@ export const Categories = ({ data }: CategoriesProps) => {
       >
         Newest
       </button>
+
       {data?.map((item) => (
         <button
           onClick={() => onClick(item.id)}

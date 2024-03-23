@@ -1,9 +1,15 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
-export const BotAvatar = () => {
+interface BotAvatarProps {
+  src?: string;
+};
+
+
+
+export const BotAvatar = ({src}:BotAvatarProps) => {
   return (
     <Avatar className="h-8 w-8">
-      <AvatarImage className="p-1" src="/logo.png" />
+      <AvatarImage className="p-1" src={src ||"/logo.png"} />
     </Avatar>
   );
 };

@@ -17,13 +17,11 @@ const RootPage = async ({
   searchParams
 }: RootPageProps) => {
     
-
-  //ts-ignore
   const data = await prismadb.companion.findMany({
     where: {
       categoryId: searchParams.categoryId,
       name: {
-        search: searchParams.name,
+        contains: searchParams.name, // Using contains for partial string matching
       },
     },
     orderBy: {
@@ -37,6 +35,7 @@ const RootPage = async ({
       }
     },
   });
+  
 
   const categories = await getCategories();
 
