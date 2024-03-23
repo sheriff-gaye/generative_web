@@ -13,7 +13,7 @@ interface CategoriesProps {
 }
 
 export const Categories = ({ data }: CategoriesProps) => {
-  console.log(data);
+
 
   const router = useRouter();
   const searchParams = useSearchParams();
