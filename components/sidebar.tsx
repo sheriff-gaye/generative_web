@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import {
   ArrowLeftRight,
+  BrainCircuit,
   Camera,
   Code,
   ImageDown,
@@ -64,8 +65,8 @@ const routes = [
 
   {
     label: "AI companion",
-    icon: Code,
-    color: "text-green-700",
+    icon: BrainCircuit,
+    color: "text-red-700",
     href: "/companion"
   },
 

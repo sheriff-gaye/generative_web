@@ -3,6 +3,7 @@ import { checkSubscription } from "@/lib/subscription";
 import { getApiLimitCount } from "@/lib/api-limit";
 
 import Sidebar from "@/components/sidebar";
+import { Toaster } from "@/components/ui/toaster";
 
 const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
     const apiLimitCount = await getApiLimitCount();
@@ -15,6 +16,7 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
 
       <main className="md:pl-72">
         <Navbar />
+        <Toaster/>
         {children}
       </main>
     </div>

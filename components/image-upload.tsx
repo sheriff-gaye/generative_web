@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CldUploadButton } from "next-cloudinary";
-import { Button } from "@/components/ui/button";
-import { ImageIcon, X } from "lucide-react";
 
 interface ImageUploadProps {
   value: string;
@@ -30,7 +28,7 @@ export const ImageUpload = ({
   return (
     <div className="space-y-4 w-full flex flex-col justify-center items-center">
       
-      <CldUploadButton options={{ maxFiles: 1 }} onUpload={(result: any) => onChange(result.info.secure_url)} uploadPreset="t4drjppf">
+      <CldUploadButton options={{ maxFiles: 1 }} onUpload={(result: any) => onChange(result.info.secure_url)} uploadPreset="jk8gsvlg">
         <div 
           className="
             p-4 
